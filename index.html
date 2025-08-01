@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stellar Portfolio | Jacintha Preethi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.27/build/spline-viewer.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+  <!-- 🚀 Preloader -->
+  <div id="preloader">
+    <div >
+      <img src="spaceship.jpg" alt="Rocket" class="loader-rocket" />
+      <div class="exhaust"></div>
+    </div>
+    <p class="loading-text">Enter into my Universe...</p>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <!-- 🌠 Floating Particles -->
+  <div id="particles-js"></div>
+
+  <!-- 🪐 Floating Asteroids -->
+  <div class="floating-asteroids">
+    <div class="asteroid asteroid-1"></div>
+    <div class="asteroid asteroid-2"></div>
+    <div class="asteroid asteroid-3"></div>
+  </div>
+
+  <!-- 🌌 Main Website -->
+  <div id="main-content" class="hidden">
+    <!-- ⭐ Navigation -->
+    <nav class="cosmic-nav">
+      
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+       
+      </ul>
+      <div class="nav-social">
+        <a href="https://github.com/Nightsky-05" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jacintha-preethi" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:jacintha8910@gmail.com" class="social-icon" ><i class="fas fa-envelope"></i></a>
+    
+      </div>
+      <div class="nav-toggle">
+        <div class="hamburger"></div>
+      </div>
+    </nav>
+
+    <!-- 🌟 Hero Section -->
+    <section class="hero">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+        <div class="title-wrapper">
+          <h1 class="intro-text"><span id="typed-name"></span><span class="cursor">|</span></h1>
+          <div class="title-decoration"></div>
+        </div>
+        <p class="intro-description">
+          Welcome to my digital universe.<br />
+          Explore my galaxy of projects and skills and get to know about me!! .
+        </p>
+        <div class="hero-buttons">
+          <button class="explore-btn cosmic-btn" onclick="scrollToSection('projects')">
+            <span>🚀 Explore</span>
+            <div class="btn-hover-effect"></div>
+          </button>
+          
+        </div>
+        
+      </div>
+      <div class="spline-container">
+        <spline-viewer url="https://prod.spline.design/LZO0cfGZR3b5JLdb/scene.splinecode" class="pattern"></spline-viewer>
+      </div>
+      <div class="hero-decoration hero-dec-1"></div>
+      <div class="hero-decoration hero-dec-2"></div>
+    </section>
+
+    <!-- 🚀 Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <div class="section-subtitle">Explore my cosmic creations</div>
+        <div class="section-decoration"></div>
+      </div>
+      <div class="project-content">
+
+
+        <!-- Flippable Cards -->
+        <div class="card-grid">
+          <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="flip-inner">
+              <div class="flip-front cosmic-card">
+                <div class="card-bg" style="background-image: url('venus.jpg')"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <i class="card-icon fas fa-globe"></i>
+                  <h3 class="card-title">Web Projects</h3>
+                </div>
+              </div>
+              <div class="flip-back cosmic-card">
+                <div class="card-content">
+                  <h3 class="card-title">Web Projects</h3>
+                  <p class="card-desc">A fantasy themed fun website created using Angular</p>
+                  <a href="https://nightsky-05.github.io/my-angular-site/" class="card-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="flip-inner">
+              <div class="flip-front cosmic-card">
+                <div class="card-bg" style="background-image: url('jupiter.jpg')"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <i class="card-icon fas fa-mobile-alt"></i>
+                  <h3 class="card-title">UI/UX Design</h3>
+                </div>
+              </div>
+              <div class="flip-back cosmic-card">
+                <div class="card-content">
+                  <h3 class="card-title">UI/UX Design</h3>
+                  <p class="card-desc">Beautiful and intuitive user interfaces with  user experience.</p>
+                  <a href="#projects" class="card-link">View Designs <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="flip-inner">
+              <div class="flip-front cosmic-card">
+                <div class="card-bg" style="background-image: url('saturn.jpg')"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <i class="card-icon fas fa-paint-brush"></i>
+                  <h3 class="card-title">Graphic Design</h3>
+                </div>
+              </div>
+              <div class="flip-back cosmic-card">
+                <div class="card-content">
+                  <h3 class="card-title">Graphic Design</h3>
+                  <p class="card-desc">Stunning visual designs that communicate ideas effectively.</p>
+                  <a href="#projects" class="card-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="flip-inner">
+              <div class="flip-front cosmic-card">
+                <div class="card-bg" style="background-image: url('neptune.jpg')"></div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <i class="card-icon fas fa-gamepad"></i>
+                  <h3 class="card-title">AI</h3>
+                </div>
+              </div>
+              <div class="flip-back cosmic-card">
+                <div class="card-content">
+                  <h3 class="card-title">AI</h3>
+                  <p class="card-desc">Playing with AI</p>
+                  <a href="#projects" class="card-link">Enter<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+    </section>
+
+    <!-- 🌍 About Section -->
+    <section id="about" class="section dark-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-subtitle">My journey through the cosmos</div>
+        <div class="section-decoration"></div>
+      </div>
+      <spline-viewer 
+          url="https://prod.spline.design/2WPit3oocDVU3Jq3/scene.splinecode" 
+          class="rocket" 
+          data-aos="fade-right">
+        </spline-viewer>
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <div class="image-wrapper">
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          
+          <h3 class="about-title">Digital Explorer & Creative Designer</h3>
+          <p class="about-desc">
+            👋 Hey there! I’m Jacintha — a curious creator, passionate developer, and design enthusiast on a never-ending quest to build wow-worthy digital experiences. 🚀✨
+
+I love exploring cool new stuff (especially if it involves tech!), and I’m always finding new ways to play with designs, pixels, and possibilities. Whether it’s crafting sleek user interfaces, doodling on my book, singing to a random tune, or geeking out over the latest AI tools — I do it all with heart and creativity. 🎨💻🎶
+
+You’ll usually find me working on exciting projects, learning modern tech, and pushing boundaries—because staying still? Not my thing. I crave growth, collaboration, and the thrill of creating something awesome with amazing teams and inspiring leaders. 🌟
+
+Basically, I love being me — and that means coding, designing, dreaming, and doing. 💡 Let’s build something amazing together!
+          </p>
+          
+          <button class="cosmic-btn download-btn" onclick="window.open('Jacintha-new resume.pdf', '_blank')">
+  <span>📄 View Resume</span>
+  <div class="btn-hover-effect"></div>
+</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⚡ Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+        <div class="section-decoration"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skills-radar" data-aos="zoom-in">
+          <canvas id="skills-chart"></canvas>
+        </div>
+        <div class="skills-list" data-aos="fade-left">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="80">
+                <div class="skill-name">HTML/CSS</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Intermediate</div>
+              </div>
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">React.js</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Angular</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Bootstrap</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Tailwind CSS</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Jquery</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              
+              <div class="skill-item" data-level="10">
+                <div class="skill-name">Django</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="10">
+                <div class="skill-name">Wagtail</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="10">
+                <div class="skill-name">Spring Boot</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="10">
+                <div class="skill-name">REST APIs</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="10">
+                <div class="skill-name">Docker</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Design</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="50">
+                <div class="skill-name">Figma</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="30">
+                <div class="skill-name">Adobe Illustrator</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginer</div>
+              </div>
+              <div class="skill-item" data-level="30">
+                <div class="skill-name"> Adobe Photoshop</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="30">
+                <div class="skill-name"> Adobe Flash</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-name"> Canva</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Intermediate</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Version Control</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Git & Github</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+        </div>
+      </div>
+      <div class="skill-category">
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="80">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Intermediate</div>
+              </div>
+              <div class="skill-item" data-level="50">
+                <div class="skill-name">C#</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="30">
+                <div class="skill-name">R</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="80">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Intermediate</div>
+              </div>
+            </div>
+      </div>
+      <div class="skill-category">
+            <h3 class="category-title">Softwares</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="70">
+                <div class="skill-name">VS code</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Intermediate</div>
+              </div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-name">MS Word</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Proficient</div>
+              </div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-name">MS Excel</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Proficient</div>
+              </div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-name">MS Powerpoint</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Proficient</div>
+              </div>
+              <div class="skill-item" data-level="50">
+                <div class="skill-name">Wix</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+            </div>
+      </div>
+      <div class="skill-category">
+            <h3 class="category-title">3D</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="20">
+                <div class="skill-name">Spline</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="10">
+                <div class="skill-name">Blender</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+            </div>
+        </div>
+  <div class="skill-category">
+            <h3 class="category-title">Vibe Coding</h3>
+            <div class="skill-items">
+              <div class="skill-item" data-level="50">
+                <div class="skill-name">Lovable</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="50">
+                <div class="skill-name">Bolt</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+              <div class="skill-item" data-level="50">
+                <div class="skill-name">Replit</div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+                <div class="skill-status">Beginner</div>
+              </div>
+            </div>
+  </div>
+    </section>
+
+    
+
+    <!-- 🚀 Back to Top -->
+    <div class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- 🌠 Footer -->
+    <footer class="cosmic-footer">
+      <div class="footer-content">
+        
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4 class="link-title">Explore</h4>
+            <a href="#posters" class="footer-link" id="postersLink">Posters</a>
+            <div id="posterBox" class="hidden-box">
+  <div class="glow-box">
+    <button class="close-btn" id="closePosterBtn">&times;</button>
+    <div class="carousel-wrapper">
+      <button class="arrow left" id="prevPosterBtn">&#10094;</button>
+      <div class="carousel-track" id="posterCarousel">
+        <img src="myst.jpg" alt="Poster 1" />
+        <img src="copy.jpg" alt="Poster 1" />
+        <img src="Hot chcolate.png" alt="Poster 1" />
+        <img src="Invitation card - cliche.png" alt="Poster 2" />
+        <img src="Greeting.png" alt="Poster 3" />
+        <img src="white and gold b'day card.png" alt="Poster 3" />
+        <img src="Farewell.png" alt="Poster 3" />
+        <img src="Thankyou card.png" alt="Poster 3" />
+        <img src="Ann.png" alt="Poster 3" />
+        <img src="certificate.png" alt="Poster 3" />
+
+      </div>
+      <button class="arrow right" id="nextPosterBtn">&#10095;</button>
+    </div>
+  </div>
+</div>
+            
+           <a href="#sketch" class="footer-link" id="sketchLink">Sketches</a>
+
+<div id="sketchBox" class="hidden-box">
+  <div class="glow-box">
+    <button class="close-btn" id="closeBtn">&times;</button>
+
+    <div class="carousel-wrapper">
+      <button class="arrow left" id="prevBtn">&#10094;</button>
+
+      <div class="carousel-track" id="carousel">
+        <img src="doodle.jpg" alt="Sketch 1" />
+        <img src="anime.jpg" alt="Sketch 2" />
+        <img src="deer.jpg" alt="Sketch 3" />
+        <img src="moon.jpg" alt="Sketch 4" />
+        <img src="face.jpg" alt="Sketch 5" />
+        <img src="cartoon.jpg" alt="Sketch 6" />
+        <img src="lion.jpg" alt="Sketch 7" />
+        <img src="tree.jpg" alt="Sketch 8" />
+      </div>
+
+      <button class="arrow right" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+     <a href="#skills" class="footer-link" id="otherLink">Other-AI prompted images</a>
+            <div id="otherBox" class="hidden-box">
+  <div class="glow-box">
+    <button class="close-btn" id="closeOtherBtn">&times;</button>
+    <div class="carousel-wrapper">
+      <button class="arrow left" id="prevOtherBtn">&#10094;</button>
+      <div class="carousel-track" id="otherCarousel">
+        <img src="sea.jpg" alt="Other 1" />
+        <img src="purple.jpg" alt="Other 2" />
+        <img src="rose.jpg" alt="Other 3" />
+        <img src="pega.png" alt="Other 3" />
+        <img src="plate.jpg" alt="Other 3" />
+        <img src="boy.png" alt="Other 3" />
+        <img src="green.jpg" alt="Other 3" />
+        <img src="panda.jpg" alt="Other 3" />
+        <img src="hb.jpg" alt="Other 3" />
+
+
+
+      </div>
+      <button class="arrow right" id="nextOtherBtn">&#10095;</button>
+    </div>
+  </div>
+</div>
+           
+        </div>
+        
+      </div>
+<div class="copyright">
+                    <p>&copy; 2025 Jacintha Preethi.</p>
+                </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
